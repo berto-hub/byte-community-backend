@@ -14,7 +14,11 @@ connectDB();
 app.get('/', (req, res) => {
     //res.send("Buenas");
     console.log("menu");
-})
+});
+
+app.get('/getUsers', (req, res) => {
+    res.send("Holaaaaaaaaaaaa");
+}) 
 
 /*app.use('/graphql', graphqlHTTP({
     graphiql: true,
